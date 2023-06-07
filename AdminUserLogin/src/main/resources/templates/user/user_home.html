@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>User Home</title>
+</head>
+<body>
+<div align="center">
+    <h2>Welcome to CodeJava.net User Control Panel</h2>
+    Logged user: <span sec:authentication="name">Bob</span>
+    Roles: <span sec:authentication="principal.authorities">[ROLE_USER, ROLE_ADMIN]</span>
+    <button><a th:href="@{/user/profile}">My Profile</a></button>
+    <form th:action="@{/user/logout}" method="post">
+        <input type="submit" value="logout">
+    </form>
+</div>
+</body>
+</html>

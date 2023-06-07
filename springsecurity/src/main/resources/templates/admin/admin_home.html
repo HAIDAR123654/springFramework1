@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Home</title>
+</head>
+<body>
+<div align="center">
+    <h2>Welcome to CodeJava.net Admin Control Panel</h2>
+    <p>
+        Your username is : <b>[[${#request.userPrincipal.principal.username}]]</b>
+    </p>
+    <button><a th:href="@{/admin/allUsers}">Your All Users</a></button>
+    <form th:action="@{/admin/logout}" method="post">
+        <input type="submit" value="logout">
+    </form>
+</div>
+</body>
+</html>

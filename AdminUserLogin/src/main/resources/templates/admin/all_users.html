@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Home</title>
+</head>
+<body>
+<h4>All Registered Users</h4>
+<table>
+<tr th:each="all : ${allUser}">
+    <td th:text="${all.name}">test-name</td>
+    <td th:text="${all.email}">test-email</td>
+    <td th:text="${all.password}">test-password</td>
+</tr>
+</table>
+</body>
+</html>

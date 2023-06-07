@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Error page</title>
+  <meta charset="utf-8" />
+</head>
+<body>
+<h2 align="center"> You are not Authorize to view this page</h2>
+<h3 align="center" th:text="${errorMessage}">test..</h3>
+<a align="center"  th:href="@{/}">Back to Home Page</a>
+</body>
+</html>

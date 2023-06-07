@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Home</title>
+</head>
+<body>
+<h4>All Registered Users</h4>
+<h3 th:text="${allUser}"></h3>
+<div class="container">
+
+    <div class="table">
+        <div class="table-header">
+            <div class="header__item"><a id="name" class="filter__link" href="#">User Name</a></div>
+            <div class="header__item"><a id="wins" class="filter__link filter__link--number" href="#">Password</a></div>
+            <div class="header__item"><a id="draws" class="filter__link filter__link--number" href="#">Roles</a></div>
+        </div>
+        <div class="table-content">
+            <div class="table-row">
+                <div class="table-data">Tom</div>
+                <div class="table-data">2</div>
+                <div class="table-data">0</div>
+            </div>
+            <div class="table-row">
+                <div class="table-data">Dick</div>
+                <div class="table-data">1</div>
+
+            </div>
+            <div class="table-row">
+                <div class="table-data">Harry</div>
+                <div class="table-data">0</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
